@@ -1,5 +1,6 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+export const AUTH_PROVIDER_NAME = 'ChatGPT';
 
 export type ChatGPTUser = {
   userId: string;

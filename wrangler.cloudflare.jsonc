@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "matcha-mates",
+  "account_id": "3c4ce0d8bab43bfe3ac48b3a8a843e53",
+  "main": "./worker/cloudflare.ts",
+  "compatibility_date": "2026-10-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true, "head_sampling_rate": 0.1 },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "matcha-mates",
+    "database_id": "c8766511-d0ab-4262-a7ea-92214817afb3",
+    "migrations_dir": "drizzle"
+  }]
+}
